@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .info-title {
   /* margin: auto; */
   width: auto;
