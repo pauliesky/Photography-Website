@@ -1,6 +1,6 @@
 import React from "react";
 import './Info.css'
-
+// https://drive.google.com/file/d/1GBbLM7nmptodT0-Ac9GQud9bu2wWLLiG/view?usp=sharing
 function Info() {
   return (
     <div className="info">

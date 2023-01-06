@@ -22,7 +22,7 @@ function Footer() {
             <Link to='/info' className='text-link'><li>INFO</li></Link>
             <Link to='/chronicles' className='text-link'><li>CHRONICLES</li></Link>
             <Link to='/contact' className='text-link'><li>CONTACT</li></Link></div>
-          <div className='col'><p>All Content Copyright &copy; 2022 Enoch Oyebade Photography</p></div>
+          <div className='col copy'><p>All Content Copyright &copy; 2022 Enoch Oyebade Photography</p></div>
            <div className='col'> <HiArrowLongUp className='arrow-up' onClick={handleClick} /></div>
         </div>
     </div>

@@ -5,26 +5,34 @@
   -webkit-column-width: 10%;
   -moz-column-width: 10%;
   column-width: 10%;
-  padding: 80px 40px;
+  padding: 80px 100px;
   background-color: rgb(0, 0, 0);
 }
 .home-gallary .pics {
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   cursor: pointer;
-  padding-top:5px;
-  
+  padding-top: 5px;
 }
+/* https://res.cloudinary.com/dzbtxebuf/image/upload/v1672028604/Website%20Images/_ENO0789_km2foi.jpg */
 .home-img {
-  background-image: url("https://drive.google.com/uc?export=view&id=1i0rk-RY-0ruKOWLOt4bbUJLjqEqZJz4n");
-  background-size: cover;
-  height: 100vh;
-  /* background-position: 0% 7%; */
-  /* background-position: center; */
+  background-image: url("https://res.cloudinary.com/dzbtxebuf/image/upload/v1672028604/Website%20Images/_ENO0789_km2foi.jpg");
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+height: 100%;
+  /* background-size: cover; */
+  /* background-size:cover;
   background-repeat: no-repeat;
+  background-position: center center; */
+  /* background-attachment: fixed; */
+  /* background-position: 0% 65%; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   /* background-size: cover; */
   /* position: relative;
   z-index: -1; */
+  
 }
 
 /* .home-gallary .pics:hover {
@@ -55,8 +63,8 @@
   color: #fff;
   z-index: 9999;
 }
-.sliderWrap .sldNum{
-    top: 40px;
+.sliderWrap .sldNum {
+  top: 40px;
   left: 40px;
 }
 .btnNext:hover,
@@ -92,10 +100,14 @@
   pointer-events: none;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */  
+  user-select: none; /* Standard syntax */
 }
 
 @media (max-width: 800px) {
+  .home-img{
+      background-position: 50% 50% 50% 50%;
+
+  }
   .home-gallary {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -110,6 +122,10 @@
   }
 }
 @media (max-width: 480px) {
+  /* .home-img{
+    width: 100%;
+    height: 20px;
+  } */
   .home-gallary {
     -webkit-column-count: 1;
     -moz-column-count: 1;

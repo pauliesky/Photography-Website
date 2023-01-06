@@ -4,7 +4,7 @@ import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 
-
+// https://drive.google.com/file/d//view?usp=sharing
 function Navbar() {
   // https://drive.google.com/uc?export=view&id=1xRYIQhqpS6QagwZ_PfyApp6SLrwpEviM
   // https://drive.google.com/file/d//view?usp=sharing
@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <Link to='/'><img alt="logo" className="logo" src="https://drive.google.com/uc?export=view&id=1xRYIQhqpS6QagwZ_PfyApp6SLrwpEviM" /></Link>
+        <div><Link to='/'><img alt="logo" className="logo" src="https://drive.google.com/uc?export=view&id=1j4try0CrgPCiaQJzgbBm_kYnb1hEP3V7" /></Link></div>
         <ul className={mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
           <Link to='/' className='text-link' ><li>HOME</li></Link>
           <Link to='/info' className='text-link'><li>INFO</li></Link>

@@ -26,7 +26,9 @@ function Home() {
 
   return (
     <>
-      <div className="home-img"></div>
+      <div className="home-img">
+      {/* <img></img> */}
+      </div>
       {openModal &&
         <div className="sliderWrap">
           <div className="sldNum">{slideNumber + 1}/{homeImgs.length}</div>

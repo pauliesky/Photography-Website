@@ -25,9 +25,9 @@ li {
 }
 
 .logo {
-  margin-top: 1rem;
+  margin-top: 2rem;
   height: 5rem;
-
+  margin-left: 2rem;
   /* padding-top: 5px; */
   /* text-align: center; */
   cursor: pointer;
@@ -61,15 +61,16 @@ button {
 .mobile-menu-icon {
   display: none;
   /* font-size: 10rem; */
+
 }
 
 @media (max-width: 1024px) {
   .logo {
     display: flex;
     position: fixed;
-    /* top: 10px; */
-    /* left: 35px; */
-    height: 2rem;
+    top: -35px;
+    left: -10px;
+    height: 5rem;
   }
   .nav-links {
     display: none;
@@ -83,7 +84,7 @@ button {
     top: 0;
     transition: 2s ease-in-out;
     width: 100%;
-    background: white;
+    background: black;
   }
 
   ul li {
@@ -91,10 +92,13 @@ button {
     width: 100%;
     transition: all 0.5s ease;
     text-align: center;
+    color: white;
   }
   .mobile-menu-icon {
     position: absolute;
     display: block;
     right: 20px;
+    top: 20px;
+    color: white;
   }
 }
