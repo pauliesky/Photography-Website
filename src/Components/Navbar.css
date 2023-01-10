@@ -22,8 +22,22 @@ li {
   position: fixed;
   width: 100%;
   /* background-color: red; */
+  transition-timing-function: ease-out;
+  transition: linear 0.9s;
 }
+.display{
+  display: none;
 
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-top: 2rem;
+}
 .logo {
   margin-top: 2rem;
   height: 5rem;

@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 // https://drive.google.com/file/d//view?usp=sharing
+// 'https://drive.google.com/uc?export=view&id=1Yfn0nzYj6V8BlUcGlzAwx3jjPotnYtMx
 export default [
   {
     id: 1,

@@ -1,18 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 // https://drive.google.com/file/d//view?usp=sharing
+// https://drive.google.com/file/d//view?usp=sharing
+// https://drive.google.com/uc?export=view&id=1xRYIQhqpS6QagwZ_PfyApp6SLrwpEviM
 function Navbar() {
-  // https://drive.google.com/uc?export=view&id=1xRYIQhqpS6QagwZ_PfyApp6SLrwpEviM
-  // https://drive.google.com/file/d//view?usp=sharing
   const [mobile, setMobile] = useState(false)
+  const [show, setShow] = useState(false)
+        
+  const navbarScroll = () => {
+  if (window.scrollY > 250) {
+    setShow(true)
+  } else {
+    setShow(false)
+  }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', navbarScroll)
+    return () => {
+      window.removeEventListener('scroll',navbarScroll)
+    }
+  }, [])
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar glass ${show && 'display'} `}> 
         <div><Link to='/'><img alt="logo" className="logo" src="https://drive.google.com/uc?export=view&id=1j4try0CrgPCiaQJzgbBm_kYnb1hEP3V7" /></Link></div>
         <ul className={mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
           <Link to='/' className='text-link' ><li>HOME</li></Link>

@@ -24,6 +24,8 @@ function Home() {
     slideNumber + 1 === homeImgs.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1)
   }
 
+
+
   return (
     <>
       <div className="home-img">

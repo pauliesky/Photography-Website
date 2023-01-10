@@ -1,6 +1,9 @@
 import React from "react";
 import './Info.css'
 // https://drive.google.com/file/d/1GBbLM7nmptodT0-Ac9GQud9bu2wWLLiG/view?usp=sharing
+// https://drive.google.com/file/d//view?usp=sharing
+// 
+
 function Info() {
   return (
     <div className="info">
@@ -9,7 +12,7 @@ function Info() {
       </div>
       <div className="about-us">
         <div className="about-img">
-          <img src="https://res.cloudinary.com/akinleye-paul/image/upload/v1638576689/Tiidelab%20Fellows/tomiwa_wt9s6r.jpg" alt="img"></img>
+          <img src="https://drive.google.com/uc?export=view&id=1BazFqGZz1c-1sF4lFoQwzlVLKoyWFybU" alt="img"></img>
         </div>
         <div className="about-details">
           <p>Hi there, my name is Enoch Oyebade.</p>

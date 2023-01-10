@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -16,12 +17,13 @@
   justify-content: center;
   padding-top: 10rem;
   font-family: "Montserrat", sans-serif;
-  font-size:21.41px;
+  font-size: 21.41px;
+  letter-spacing: 0.2em;
 }
 
 .info {
   background-color: black;
-  height: 60rem;
+  height: 100rem;
 }
 .about-us {
   display: grid;
@@ -30,33 +32,45 @@
   justify-content: center;
   height: 30rem;
   align-items: center;
-  /* padding: 10rem; */
+  padding: 10rem;
   margin: auto;
   width: 90%;
 }
 .about-img img {
-  height: 20rem;
-  width: 20rem;
+  height: 40rem;
+  width: 40rem;
 }
 .about-details {
-  height: 20rem;
+  height: 40rem;
+  width: 60rem;
 }
 .about-details p {
   padding: 0rem 0 2rem;
   color: white;
   font-family: "Lora", serif;
+  letter-spacing: 0.2em;
 }
 .story {
   color: white;
-  height: 20rem;
+  height: 40rem;
   text-align: center;
   margin: auto;
   width: 50%;
+  padding-top: 30rem;
 }
 .story p {
- padding-top: 2rem;
- font-family: "Lora", serif;
+  padding-top: 2rem;
+  font-family: "Lora", serif;
+  letter-spacing: 0.2em;
 }
 .story h1 {
- font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 1024px) {
+  .about-us {
+    display: grid;
+    flex-direction: row;
+  }
 }

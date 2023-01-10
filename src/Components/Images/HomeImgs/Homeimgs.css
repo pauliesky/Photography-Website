@@ -17,22 +17,18 @@
 /* https://res.cloudinary.com/dzbtxebuf/image/upload/v1672028604/Website%20Images/_ENO0789_km2foi.jpg */
 .home-img {
   background-image: url("https://res.cloudinary.com/dzbtxebuf/image/upload/v1672028604/Website%20Images/_ENO0789_km2foi.jpg");
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
-height: 100%;
   /* background-size: cover; */
-  /* background-size:cover;
+  background-size: cover;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-position: center center; */
+  /* background-position: center; */
   /* background-attachment: fixed; */
-  /* background-position: 0% 65%; */
+  background-position: 0% 65%;
   /* background-position: center; */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-  /* position: relative;
-  z-index: -1; */
-  
+  /* position: relative; */
+  /* z-index: -1; */
 }
 
 /* .home-gallary .pics:hover {
@@ -104,9 +100,8 @@ height: 100%;
 }
 
 @media (max-width: 800px) {
-  .home-img{
-      background-position: 50% 50% 50% 50%;
-
+  .home-img {
+    background-position: 50% 50% 50% 50%;
   }
   .home-gallary {
     -webkit-column-count: 3;
