@@ -14,14 +14,15 @@
   color: whitesmoke;
   text-align: center;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #333;
   height: 100rem;
-  padding: 5rem 10rem 5rem 33rem;
+  padding-top: 5rem;
 }
-
 
 .form-container > input {
   width: 30rem;
@@ -34,6 +35,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   letter-spacing: 0.2em;
+  padding-bottom: 0.5rem;
 }
 .radio-option > label {
   font-size: 14px;
@@ -44,28 +46,44 @@
 .radio-option {
   padding-bottom: 20px;
 }
-.radio{
+.radio {
   padding-top: 10px;
 }
 .radio-container {
   color: white;
+  margin-left: 5rem;
 }
 
 .radio-container > label {
   letter-spacing: 0.2em;
 }
 
-.btn{
+.btn {
   margin-top: 30px;
   border: 1px solid white;
   width: 10rem;
-  border-radius: 25px ;
+  border-radius: 25px;
   padding: 10px 24px 10px 28px;
   cursor: pointer;
 }
-.btn > button{
+.btn > button {
   color: white;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .form-container .input__size {
+    width: 15rem;
+    height: 0rem;
+  }
+  .textarea__wrapper {
+    display: flex;
+    width: 20rem;
+  }
+  .label__who {
+    text-align: center;
+    padding: 1rem;
+  }
 }
